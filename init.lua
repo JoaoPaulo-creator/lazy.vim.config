@@ -7,5 +7,4 @@ require("plugins.dap-ui")
 
 -- programming languages
 require("plugins.scala")
-require("plugins.kotlin")
 require("plugins.gleam")

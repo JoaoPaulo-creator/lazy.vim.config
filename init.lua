@@ -8,3 +8,4 @@ require("plugins.dap-ui")
 -- programming languages
 require("plugins.scala")
 require("plugins.gleam")
+require("plugins.metals")

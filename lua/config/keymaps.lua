@@ -9,3 +9,5 @@ vim.keymap.set("n", "<leader>/", function()
                 previewer = false,
         }))
 end, { desc = "[/] Fuzzily search in current buffer" })
+
+vim.keymap.set("n", "<leader>sf", builtin.find_files, { desc = "[S]earch [F]iles" })

@@ -2,5 +2,10 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- vim.keymap.set("n", "<leader>fT", function "" end)
--- vim.keymap.set("n", "<leader>fT", function "" end)
+local builtin = require("telescope.builtin")
+vim.keymap.set("n", "<leader>/", function()
+        builtin.current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
+                winblend = 10,
+                previewer = false,
+        }))
+end, { desc = "[/] Fuzzily search in current buffer" })
